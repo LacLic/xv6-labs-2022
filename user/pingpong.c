@@ -33,5 +33,8 @@ main(int argc, char *argv[])
     write(p[1], "pong", 4);
   }
 
+  close(p[0]);
+  close(p[1]);
+
   exit(0);
 }
