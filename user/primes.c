@@ -79,7 +79,7 @@ main(int argc, char *argv[])
       // fprintf(2, "pipe closed\n");
       break;
     }else {
-      close(left_pipe[0]);
+      close(left_pipe[0]); // remember to close left-left pipe, or it will become garbage memory
     }
   }
 
